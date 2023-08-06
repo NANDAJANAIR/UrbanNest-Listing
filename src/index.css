@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.bdr {
+  color: white; /* Unfortunately you can't use transparent here … */
+  text-shadow: -1px -1px 0 #1b1c57, 1px -1px 0 #1b1c57, -1px 1px 0 #1b1c57,
+    1px 1px 0 #1b1c57;
+  z-index: -30;
+}
+
+.myfilter {
+  position: absolute;
+  width: 600px;
+  height: 699px;
+  left: -500px;
+  top: -300px;
+  background: #41e2f1;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+}
+
+.myfilter2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 150px;
+  top: 30px;
+  background: #0ee8bf;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+}
+
+.myfilter3 {
+  position: absolute;
+  width: 400px;
+  height: 694px;
+  left: 10px;
+  top: -305px;
+  background: #71f6dd;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+}
+
+.redytosellfilter1 {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  left: 1533px;
+  top: 0px;
+  background: #FF9882;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+
+}
+
+.redytosellfilter2 {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+  left: 1593px;
+  top: 0px;
+  background: #FFFA82;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .myfilter {
+    width: 500px;
+    height: 599px;
+    left: -400px;
+    top: -200px;
+  }
+
+  .myfilter2 {
+    width: 150px;
+    height: 150px;
+    left: 120px;
+    top: 20px;
+  }
+
+  .myfilter3 {
+    width: 300px;
+    height: 594px;
+    left: 6px;
+    top: -205px;
+  }
+}
+
+.landingPage{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem;
+  padding-left: 3rem;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  height: 120vh;
+}
+
+.leftArea{
+  width: 40%;
+}
+
+.crypto-heading,.realTime-heading{
+  font-size: 6 rem !important;
+  font-weight: 700;
+  margin: 0;
+}
+
+.crypto-heading{
+  color: var(--white);
+}
+
+@media only screen and (max-width: 575px) {
+  /* For mobile phones: */
+  .myfilter {
+    width: 400px;
+    height: 499px;
+    left: -300px;
+    top: -100px;
+  }
+
+  .myfilter2 {
+    width: 100px;
+    height: 100px;
+    left: 80px;
+    top: 15px;
+  }
+
+  .myfilter3 {
+    width: 200px;
+    height: 494px;
+    left: 6px;
+    top: -105px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* For mobile phones: */
+  .myfilter {
+    width: 250px;
+    height: 259px;
+    left: -200px;
+    top: -50px;
+  }
+
+  .myfilter2 {
+    width: 60px;
+    height: 60px;
+    left: 50px;
+    top: 10px;
+  }
+
+  .myfilter3 {
+    width: 100px;
+    height: 264px;
+    left: 3px;
+    top: -50px;
+  }
+}
+
+/* .owl-stage{
+  transform: translate3d(-2464px,0,0) !important;
+} */
